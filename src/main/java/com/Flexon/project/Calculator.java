@@ -16,7 +16,7 @@ public class Calculator {
 //	public float divide(float a, float b) {
 //		return a/b;
 //	}
-	
+	//method
 	public static Integer sum(Integer x, Integer y) {
 		if(x == null || y == null) {
 			return null;
