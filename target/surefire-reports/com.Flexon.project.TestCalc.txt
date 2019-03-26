@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.Flexon.project.TestCalc
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in com.Flexon.project.TestCalc
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.047 s <<< FAILURE! - in com.Flexon.project.TestCalc
+testSum3(com.Flexon.project.TestCalc)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: expected:<30> but was:<20>
+	at com.Flexon.project.TestCalc.testSum3(TestCalc.java:42)
+

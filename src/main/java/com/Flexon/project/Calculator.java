@@ -17,7 +17,7 @@ public class Calculator {
 //		return a/b;
 //	}
 	
-	public Integer sum(Integer x, Integer y) {
+	public static Integer sum(Integer x, Integer y) {
 		if(x == null || y == null) {
 			return null;
 		}

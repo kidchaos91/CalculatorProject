@@ -8,12 +8,11 @@ public class TestCalc {
 
 	@Test
 	public void testSum() {
-		Calculator c1 = new Calculator();
 		System.out.println("sum");
 		Integer x = 15;
 		Integer y = 15;
 		Integer expResult = 30;
-		Integer result = c1.sum(x, y);
+		Integer result = Calculator.sum(x, y);
 		assertEquals(expResult, result);
 		System.out.println(result);
 //		assertEquals(null, Calculator.sum(15, null));
@@ -23,15 +22,27 @@ public class TestCalc {
 	
 	@Test
 	public void testSum2() {
+		System.out.println("sum");
+		Integer x = -15;
+		Integer y = 15;
+		Integer expResult = 30;
+		Integer result = Calculator.sum(x, y);
+		assertEquals(null, Calculator.sum(15, null));
+		System.out.println(result);
+	}
+	
+	@Test
+	public void testSum3() {
 		Calculator c1 = new Calculator();
 		System.out.println("sum");
 		Integer x = -15;
 		Integer y = 15;
 		Integer expResult = 30;
-		Integer result = c1.sum(x, y);
-		assertEquals(null, c1.sum(15, null));
+		Integer result = Calculator.sum(x, y);
+		assertEquals(expResult, Calculator.sum(15, 5));
 		System.out.println(result);
 	}
+
 
 
 }
